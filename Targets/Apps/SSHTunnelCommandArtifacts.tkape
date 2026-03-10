@@ -40,7 +40,7 @@ Targets:
     Name: User batch scripts
     Category: Scripts
     Path: C:\Users\%user%
-    FileMask: *.bat
+    FileMask: "*.bat"
     Recursive: true
     Comment: Batch scripts may contain ssh, plink, or netsh portproxy commands
 
@@ -48,7 +48,7 @@ Targets:
     Name: User command scripts
     Category: Scripts
     Path: C:\Users\%user%
-    FileMask: *.cmd
+    FileMask: "*.cmd"
     Recursive: true
     Comment: CMD scripts may contain ssh, plink, or netsh portproxy commands
 
@@ -56,14 +56,6 @@ Targets:
     Name: User shell scripts
     Category: Scripts
     Path: C:\Users\%user%
-    FileMask: *.sh
+    FileMask: "*.sh"
     Recursive: true
     Comment: Shell scripts may contain ssh tunneling and proxy commands
-
-  -
-    Name: User log files
-    Category: Logs
-    Path: C:\Users\%user%
-    FileMask: *.log
-    Recursive: true
-    Comment: User log files may contain pivot tool execution details
